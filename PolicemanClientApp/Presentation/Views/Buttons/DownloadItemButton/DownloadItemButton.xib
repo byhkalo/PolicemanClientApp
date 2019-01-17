@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DownloadItemButton" customModule="BeaconMuseum" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="167" height="57"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llN-Nd-5zw">
+                    <rect key="frame" x="0.0" y="0.0" width="167" height="57"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="260" text="DOWNLOAD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNo-Ph-NS5">
+                            <rect key="frame" x="8" y="12" width="118" height="20"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="lzText" value="DOWNLOAD_loc"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="the entire story" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhP-1f-8ET">
+                            <rect key="frame" x="8" y="30" width="76.5" height="15.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="11"/>
+                            <color key="textColor" red="0.65098039220000004" green="0.87450980389999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="lzText" value="the entire story_loc"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bJL-r9-WuB">
+                            <rect key="frame" x="131" y="11" width="28" height="28"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downloadImg" translatesAutoresizingMaskIntoConstraints="NO" id="S88-1k-RWP">
+                                    <rect key="frame" x="0.0" y="0.0" width="28.5" height="28.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="28.5" id="DVr-y7-wk5"/>
+                                        <constraint firstAttribute="width" constant="28.5" id="urm-AY-1dQ"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="S88-1k-RWP" firstAttribute="centerY" secondItem="bJL-r9-WuB" secondAttribute="centerY" id="6Qo-qa-dHb"/>
+                                <constraint firstAttribute="width" constant="28" id="CIL-UA-9uy"/>
+                                <constraint firstItem="S88-1k-RWP" firstAttribute="centerX" secondItem="bJL-r9-WuB" secondAttribute="centerX" id="cCH-oX-TyE"/>
+                                <constraint firstAttribute="height" constant="28" id="pgu-bo-dRk"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.10980392160000001" green="0.6705882353" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="jNo-Ph-NS5" firstAttribute="top" secondItem="llN-Nd-5zw" secondAttribute="top" constant="12" id="76w-zq-7R2"/>
+                        <constraint firstItem="PhP-1f-8ET" firstAttribute="leading" secondItem="jNo-Ph-NS5" secondAttribute="leading" id="AZZ-p0-tv6"/>
+                        <constraint firstItem="PhP-1f-8ET" firstAttribute="top" secondItem="jNo-Ph-NS5" secondAttribute="bottom" constant="-2" id="BjV-M5-KHx"/>
+                        <constraint firstAttribute="height" constant="56" id="GU6-ZQ-UNb"/>
+                        <constraint firstAttribute="trailing" secondItem="bJL-r9-WuB" secondAttribute="trailing" constant="8" id="JQN-9p-XtB"/>
+                        <constraint firstAttribute="bottom" secondItem="bJL-r9-WuB" secondAttribute="bottom" constant="18" id="L4e-lz-vnD"/>
+                        <constraint firstItem="bJL-r9-WuB" firstAttribute="leading" secondItem="jNo-Ph-NS5" secondAttribute="trailing" constant="5" id="Tqb-sP-FHD"/>
+                        <constraint firstItem="jNo-Ph-NS5" firstAttribute="leading" secondItem="llN-Nd-5zw" secondAttribute="leading" constant="8" id="YlD-8q-iGP"/>
+                        <constraint firstAttribute="bottom" secondItem="jNo-Ph-NS5" secondAttribute="bottom" constant="25" id="lIK-nx-aBb"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="llN-Nd-5zw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="0a0-LZ-31o"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="llN-Nd-5zw" secondAttribute="trailing" id="1gi-Gf-y9E"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="llN-Nd-5zw" secondAttribute="bottom" id="1hE-MO-Mn6"/>
+                <constraint firstItem="llN-Nd-5zw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="VJf-nX-UX0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="detailLabel" destination="PhP-1f-8ET" id="q8G-KZ-ndA"/>
+                <outlet property="largeDownloadLabel" destination="jNo-Ph-NS5" id="IPJ-dk-gpe"/>
+            </connections>
+            <point key="canvasLocation" x="-79.5" y="-253.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="downloadImg" width="25" height="25"/>
+    </resources>
+</document>

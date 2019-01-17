@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="PolicemanClientApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="LOF-GV-zl9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FhY-3Y-owg">
+                    <rect key="frame" x="60" y="156" width="255" height="255"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6T-wQ-ALG">
+                            <rect key="frame" x="16" y="95.5" width="223" height="64"/>
+                            <color key="backgroundColor" red="0.67450980390000004" green="0.070588235289999995" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="My Emergencies">
+                                <color key="titleColor" red="0.99994784589999997" green="1" blue="0.99987405539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="myEmergenciesButtonPressed:" destination="-1" eventType="touchUpInside" id="K3F-zB-DaF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8L-ZQ-fM5">
+                            <rect key="frame" x="16" y="175.5" width="223" height="63.5"/>
+                            <color key="backgroundColor" red="0.67450980390000004" green="0.070588235289999995" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="Other Emergencies">
+                                <color key="titleColor" red="0.99994784589999997" green="1" blue="0.99987405539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="otherEmergenciesButtonPressed:" destination="-1" eventType="touchUpInside" id="qAY-9o-w9E"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Eq-rJ-UgA">
+                            <rect key="frame" x="16" y="16" width="223" height="63.5"/>
+                            <color key="backgroundColor" red="0.67450980390000004" green="0.070588235289999995" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="Profile">
+                                <color key="titleColor" red="0.99994784589999997" green="1" blue="0.99987405539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="profileButtonPressed:" destination="-1" eventType="touchUpInside" id="u8c-T0-bFW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.25880804657936096" green="0.25883430242538452" blue="0.25878608226776123" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Q8L-ZQ-fM5" firstAttribute="top" secondItem="e6T-wQ-ALG" secondAttribute="bottom" constant="16" id="1Zk-TR-18l"/>
+                        <constraint firstItem="e6T-wQ-ALG" firstAttribute="top" secondItem="5Eq-rJ-UgA" secondAttribute="bottom" constant="16" id="86S-Gi-g0B"/>
+                        <constraint firstItem="5Eq-rJ-UgA" firstAttribute="top" secondItem="FhY-3Y-owg" secondAttribute="top" constant="16" id="9qp-MA-KkQ"/>
+                        <constraint firstItem="e6T-wQ-ALG" firstAttribute="leading" secondItem="FhY-3Y-owg" secondAttribute="leading" constant="16" id="E6N-Mn-tca"/>
+                        <constraint firstItem="Q8L-ZQ-fM5" firstAttribute="leading" secondItem="FhY-3Y-owg" secondAttribute="leading" constant="16" id="Iwv-mg-8c9"/>
+                        <constraint firstAttribute="trailing" secondItem="Q8L-ZQ-fM5" secondAttribute="trailing" constant="16" id="LuH-tD-LEc"/>
+                        <constraint firstItem="5Eq-rJ-UgA" firstAttribute="leading" secondItem="FhY-3Y-owg" secondAttribute="leading" constant="16" id="NvK-lh-Oiy"/>
+                        <constraint firstItem="e6T-wQ-ALG" firstAttribute="height" secondItem="5Eq-rJ-UgA" secondAttribute="height" id="S6O-v0-udD"/>
+                        <constraint firstAttribute="trailing" secondItem="e6T-wQ-ALG" secondAttribute="trailing" constant="16" id="fQN-xa-Ucc"/>
+                        <constraint firstItem="Q8L-ZQ-fM5" firstAttribute="height" secondItem="e6T-wQ-ALG" secondAttribute="height" id="oSY-qM-JFK"/>
+                        <constraint firstAttribute="bottom" secondItem="Q8L-ZQ-fM5" secondAttribute="bottom" constant="16" id="vnf-m4-uXo"/>
+                        <constraint firstAttribute="width" secondItem="FhY-3Y-owg" secondAttribute="height" multiplier="1:1" id="wKz-hh-7m7"/>
+                        <constraint firstAttribute="trailing" secondItem="5Eq-rJ-UgA" secondAttribute="trailing" constant="16" id="xBg-m2-atI"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6r-kE-VCf">
+                    <rect key="frame" x="126" y="419" width="123" height="123"/>
+                    <color key="backgroundColor" red="0.67450980390000004" green="0.070588235289999995" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="123" id="jOn-zd-QTy"/>
+                        <constraint firstAttribute="height" constant="123" id="uxX-K9-KCK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" title="CREATE EMERGENCY">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="titleShadowColor" red="0.25880804660000001" green="0.25883430239999999" blue="0.2587860823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="61"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.25880804660000001" green="0.25883430239999999" blue="0.2587860823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="createEmergencyButtonPressed:" destination="-1" eventType="touchUpInside" id="gwn-UR-5Rw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.18822330236434937" green="0.18824368715286255" blue="0.18820631504058838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="f6r-kE-VCf" firstAttribute="top" secondItem="FhY-3Y-owg" secondAttribute="bottom" constant="8" id="3Uf-Vt-EJl"/>
+                <constraint firstItem="FhY-3Y-owg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="60" id="9ax-dL-BBe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FhY-3Y-owg" secondAttribute="trailing" constant="60" id="Q0T-ai-8eb"/>
+                <constraint firstItem="FhY-3Y-owg" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-50" id="tZx-cb-VEh"/>
+                <constraint firstItem="f6r-kE-VCf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tae-18-3WU"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

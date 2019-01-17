@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmergenciesViewController" customModule="PolicemanClientApp" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="FZp-Xu-wz5" id="Ix3-4b-xOE"/>
+                <outlet property="view" destination="SsZ-RX-Gh4" id="bJt-U6-GNM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="SsZ-RX-Gh4">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FZp-Xu-wz5">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <color key="backgroundColor" red="0.67450980392156867" green="0.070588235294117646" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.67450980390000004" green="0.070588235289999995" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FZp-Xu-wz5" firstAttribute="top" secondItem="ffo-NA-W2T" secondAttribute="top" id="DNE-rr-xn7"/>
+                <constraint firstItem="ffo-NA-W2T" firstAttribute="trailing" secondItem="FZp-Xu-wz5" secondAttribute="trailing" id="Egf-ai-WXU"/>
+                <constraint firstItem="FZp-Xu-wz5" firstAttribute="leading" secondItem="ffo-NA-W2T" secondAttribute="leading" id="TEU-BT-aJ0"/>
+                <constraint firstItem="ffo-NA-W2T" firstAttribute="bottom" secondItem="FZp-Xu-wz5" secondAttribute="bottom" id="c5e-jx-MrR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ffo-NA-W2T"/>
+            <point key="canvasLocation" x="95" y="38"/>
+        </view>
+    </objects>
+</document>

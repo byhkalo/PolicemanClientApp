@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>108220678977-sgpngn98bj56vqfd0luku8q5e35ipl54.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.108220678977-sgpngn98bj56vqfd0luku8q5e35ipl54</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBJolZvcutGrtWbK6vbZ6jyIZBNwQ5Rx9Y</string>
+	<key>GCM_SENDER_ID</key>
+	<string>108220678977</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sp.PolicemanClientApp</string>
+	<key>PROJECT_ID</key>
+	<string>emergencysystem-93564</string>
+	<key>STORAGE_BUCKET</key>
+	<string>emergencysystem-93564.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:108220678977:ios:07582c51d9eac769</string>
+	<key>DATABASE_URL</key>
+	<string>https://emergencysystem-93564.firebaseio.com</string>
+</dict>
+</plist>
